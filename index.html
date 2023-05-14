@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desincriptador Challenge one</title>
+</head>
+<body>
+    <nav>
+        <img src="img/Vector.png" alt="logo">
+    </nav>
+
+    <main>
+        <section class="encriptar">
+            <textarea id="encriptador" placeholder="Ingrese el texto aquí" ></textarea>
+            <div class="text">
+                <p><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="btns">
+                <button class="btn-1" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-2" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje">
+            <textarea id="mensaje-encriptado" ></textarea>
+            <p class="p-one pbr">Ningún mensaje ha sido encontrado.</p>
+            <p class="p-two pbr2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="btn-copy" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <script src="code.js"></script>
+    <script src="https://kit.fontawesome.com/33295345e5.js" crossorigin="anonymous"></script>
+</body>
+</html>

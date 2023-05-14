@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #E5E5E5;;
+}
+
+nav {
+    margin-left: 3.7rem;
+    margin-top: 2rem;
+    background: #E5E5E5;;
+}
+nav img {
+    width: 1.7%;
+}
+
+main {
+    display: flex;
+    margin: .4rem 0px .5rem 3rem;
+    padding-right: 2.5rem;
+}
+
+/*Encriptar y desencriptar*/
+
+textarea {
+    border: none;
+}
+textarea:focus {
+    outline: none;
+}
+
+main .encriptar {
+    flex: 1;
+    padding-left: 6rem;
+    padding-top: 1.8rem;
+}
+
+main .encriptar #encriptador::placeholder {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color:#0A3871;
+}
+main .encriptar #encriptador {
+    height: 28rem;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    background: #E5E5E5;;
+    color:#0A3871;
+}
+
+main .mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.6rem;
+    position: ;
+    max-width: 340px;
+    box-shadow: #495057 0px 0px 5px;
+}
+main .mensaje #mensaje-encriptado {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    width: 20rem;
+    height: 70%;
+    background: url("img/Muñeco.png") no-repeat bottom;
+}
+main .mensaje #mensaje-encriptado::placeholder {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+main .mensaje .p-one {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+}
+main .mensaje .p-two {
+    font-size: .8rem;
+    text-align: center;
+    color: #495057;
+}
+
+/*Botones*/
+main .encriptar div p{
+    font-size: .8rem;
+}
+.encriptar .btns {
+    display: flex;
+    gap: 1.8rem;
+}
+
+main .encriptar .btns button,
+main .mensaje .btn-copy{
+    width: 20rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    border: none;
+}
+main .encriptar .btns .btn-1 {
+    background-color: #0A3871 !important;
+    color: white;
+}
+main .encriptar .btns .btn-2,
+main .mensaje .btn-copy {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    outline: solid 1px #0A3871;
+}
+main .mensaje .btn-copy {
+    width: 17rem;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+/*Responsive design tablet*/
+
+@media screen and (max-width: 1200px){
+    main {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+    
+    nav {
+        margin-left: 2rem;
+    }
+    main {
+        width: 80vw;
+        height: 90vh;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+    
+    main .encriptar {
+        padding: 0;
+        height: 70%;
+    }
+
+    main .encriptar #encriptador {
+        width: 100%;
+        height: 75%;
+    }
+
+    main .encriptar .btns {
+        align-items: center;
+        gap: 3rem;
+    }
+    main .encriptar .btns button {
+        width: 30rem;
+    }
+
+
+    main .mensaje {
+        max-width: unset;
+        height: 25%;
+    }
+
+    main .mensaje #mensaje-encriptado {
+        background: white;
+        width: 90%;
+        height: 50%;
+        margin-bottom: 0.5rem;
+    }
+
+    main .mensaje .btn-copy {
+        display: none;
+    }
+ 
+}
+
+/*Responsive design cellphone*/
+
+@media screen and (max-width: 450px){
+    html {
+        font-size: 13px;
+    }
+
+    nav img {
+        width: 1.3rem;
+    }
+
+    main {
+        width: 95vw;
+        margin-top: .8rem;
+    }
+    main .encriptar {
+        margin-bottom: 10px;
+    }
+    main .encriptar #encriptador {
+        margin: unset;
+        height: 65%;
+    }
+
+    main .encriptar .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    main .encriptar .btns button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    main .mensaje .btn-copy {
+        margin-top: 5px;
+        display: none;
+    }
+}
